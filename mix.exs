@@ -1,9 +1,9 @@
-defmodule Codeadvent.MixProject do
+defmodule TheAdventOfCode2018.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :codeadvent,
+      app: :theadventofcode2018,
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
@@ -14,14 +14,14 @@ defmodule Codeadvent.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :httpoison]
+      extra_applications: [:logger]
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpoison, "~> 1.4"}
+      #{:httpoison, "~> 1.4"}
     ]
   end
 end
